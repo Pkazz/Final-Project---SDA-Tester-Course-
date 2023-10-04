@@ -1,0 +1,226 @@
+{
+  "id": "00f2d6b1-e7c7-4308-8a92-69fdd0c3571b",
+  "version": "2.0",
+  "name": "Guru99",
+  "url": "https://demo.guru99.com/V1/html/addcustomerpage.php",
+  "tests": [{
+    "id": "06ab068f-1ad1-4062-8d4c-69d379f38b33",
+    "name": "Login",
+    "commands": [{
+      "id": "b8e0965d-d28f-4642-9c78-2e8fec8534bc",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/V1/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27b03d3f-fada-4efe-aa2b-ce769226d0fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa703083-89f3-41a6-b0ed-b38552e99456",
+      "comment": "",
+      "command": "click",
+      "target": "name=uid",
+      "targets": [
+        ["name=uid", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='uid']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d722fb4c-6237-4d80-830a-f02cd40a5bba",
+      "comment": "",
+      "command": "click",
+      "target": "name=frmLogin",
+      "targets": [
+        ["name=frmLogin", "name"],
+        ["css=form", "css:finder"],
+        ["xpath=//form[@name='frmLogin']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d103513-d728-4319-9e30-9516f3084813",
+      "comment": "",
+      "command": "type",
+      "target": "name=uid",
+      "targets": [
+        ["name=uid", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='uid']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "mngr528705"
+    }, {
+      "id": "89d4596a-109e-4481-ba0d-acfeec25d6ba",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6061d95e-f9bd-4f2a-a10d-58ed73c2ad00",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "UzymuvA"
+    }, {
+      "id": "6bc73a7c-336a-471e-b024-a336ab7d1e0b",
+      "comment": "",
+      "command": "click",
+      "target": "name=btnLogin",
+      "targets": [
+        ["name=btnLogin", "name"],
+        ["css=tr:nth-child(3) input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='btnLogin']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "353ee11a-451f-4adb-8649-3f3e76126f2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(3) > div",
+      "targets": [
+        ["css=div:nth-child(3) > div", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0a5dd4f0-4a9a-4a6d-b6a1-f7f2dc6a6b03",
+    "name": "Verify City filed numbers and special characters",
+    "commands": [{
+      "id": "a590a072-7962-4129-aef3-e4c173bd1e73",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/V1/html/addcustomerpage.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a5938c2-c067-4760-9f12-0c8b8daf9416",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "067ae907-ac71-42bd-b51e-e328a46138db",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,134.39999389648438)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82c4311e-404f-42a7-8ac0-d8f751da26e7",
+      "comment": "",
+      "command": "click",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8db73eb2-7486-4eb6-b59b-d84e6ad87263",
+      "comment": "",
+      "command": "type",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Bydgoszcz"
+    }, {
+      "id": "c5f40aac-d779-4e70-9af7-92d4a7a91ee4",
+      "comment": "",
+      "command": "type",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Bydgoszcz!"
+    }, {
+      "id": "875010d5-b3e3-457e-8c1d-246bd1a4a21e",
+      "comment": "",
+      "command": "click",
+      "target": "name=state",
+      "targets": [
+        ["name=state", "name"],
+        ["css=tr:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='state']", "xpath:attributes"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81586bd8-7a13-4e30-9e0e-7e54ba4165e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af956073-fb74-4b26-a61b-95fefd7644af",
+      "comment": "",
+      "command": "type",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Bydgoszcz2"
+    }, {
+      "id": "a63557d0-ebb8-4cce-8d02-5009626b52c2",
+      "comment": "",
+      "command": "click",
+      "target": "name=state",
+      "targets": [
+        ["name=state", "name"],
+        ["css=tr:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='state']", "xpath:attributes"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5f960d56-0432-4599-b150-ce179ab4926c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://demo.guru99.com/", "https://demo.guru99.com/V1/html/addcustomerpage.php", "https://demo.guru99.com/V1"],
+  "plugins": []
+}

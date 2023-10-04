@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>API - Metoda POST  - CreateBooking</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Działające API: https://restful-booker.herokuapp.com/booking
+ </preconds>
+										<steps>1. Otwieram postman
+2. Zaznaczam metodę POST
+3. Wpisuję adres URL: https://restful-booker.herokuapp.com/booking
+4. Tworzę obiekt JSON, zgodnie z dokumentacją API 
+5. {
+    &quot;firstname&quot; : &quot;Wojciech&quot;,
+    &quot;lastname&quot; : &quot;Rak&quot;,
+    &quot;totalprice&quot; : 999,
+    &quot;depositpaid&quot; : true,
+    &quot;bookingdates&quot; : {
+    &quot;checkin&quot; : &quot;2019-01-01&quot;,
+    &quot;checkout&quot; : &quot;2019-02-02&quot;},
+    &quot;additionalneeds&quot; : &quot;Tea&quot;
+}
+6. Klikam SEND
+
+
+</steps>
+										<expected>1. Otrzymuję kod odpowiedzi: 200
+2. Użytkownik zostaje dodany do bazy danych.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>API - Metoda GET -  GETBOOKING</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Działające otwarte API: https://restful-booker.herokuapp.com/booking/:id</preconds>
+										<steps>1.Otwieram postman
+2.Zaznaczam metodę GET
+3.Wpisuję adres URL: https://restful-booker.herokuapp.com/booking/:id
+4.W zakładce parameters wpisuję nr ID:1
+Klikam SEND</steps>
+										<expected>1. Kod 200
+2. Otrzymuję odpowiedż zgodną z dokumentacją
+
+Przykładowo:
+
+HTTP/1.1 200 OK
+
+{
+    &quot;firstname&quot;: &quot;Sally&quot;,
+    &quot;lastname&quot;: &quot;Brown&quot;,
+    &quot;totalprice&quot;: 111,
+    &quot;depositpaid&quot;: true,
+    &quot;bookingdates&quot;: {
+        &quot;checkin&quot;: &quot;2013-02-23&quot;,
+        &quot;checkout&quot;: &quot;2014-10-23&quot;
+    },
+    &quot;additionalneeds&quot;: &quot;Breakfast&quot;
+}
+
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>API - Metoda PATCH - PartialUpdateBooking</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Działające API: https://restful-booker.herokuapp.com/booking</preconds>
+										<steps>1.Otwieram postman
+2.Zaznaczam metodę PATCH
+3.Wpisuję URL: https://restful-booker.herokuapp.com/booking/:id
+4.Ustawiam odpowiednie parametry w zakładce Headers, żeby dokonać autoryzacji
+5.Tworzę obiekt JSON w którym dokonuję edycji wybranych danych użytkownika, zgodnie z dokumentacją API
+6.Klikam SEND
+
+
+
+
+
+
+Klikam SEND</steps>
+										<expected>1. Status 200
+2. Zwrot zgodny z dokumentacją API, dane użytkownika zostały poprawnie edytowane</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
